@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            position: relative;
+        }
+
+        /* .box:before {
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 100px;
+            width: 40px;
+            height: 40px;
+            background-color: pink;
+        } */
+
+        .box:before {
+            content: url(./timg.jpg);
+            position: absolute;
+            top: 0;
+            left: 100px;
+            width: 40px;
+            height: 40px;
+            background-color: pink;
+        } 
+        /* 伪元素是ie6就有的 是微软的ie首先用的所以没有兼容性 */
+    </style>
+</head>
+
+<body>
+    <div class="box" title="呦呦呦"></div>
+
+</body>
+
+</html>
